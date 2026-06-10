@@ -1,0 +1,6 @@
+u_key,table,name,name_ja,service_classification,service_owner_group_u_key,provider_focus,criticality,notes
+TS-NET,cmdb_ci_service_technical,Corporate Network Management,社内ネットワーク管理,Technical Service,GRP-INFRA,LAN WAN VPN and internet connectivity,Critical,Provider-focused network service for offices plant and logistics center
+TS-ID,cmdb_ci_service_technical,Identity and Access Management,ID・アクセス管理,Technical Service,GRP-SEC,Directory SSO MFA and privileged access,Critical,Authentication authorization and account lifecycle operations
+TS-DB,cmdb_ci_service_technical,Database Platform Management,データベース基盤管理,Technical Service,GRP-INFRA,Oracle HANA PostgreSQL and backup operations,Critical,Database runtime backup and recovery service
+TS-CLOUD,cmdb_ci_service_technical,Public Cloud Platform Management,パブリッククラウド基盤管理,Technical Service,GRP-INFRA,AWS Azure landing zones and shared operations,High,Cloud account guardrails monitoring and cost controls
+TS-MON,cmdb_ci_service_technical,Monitoring and Event Management,監視・イベント管理,Technical Service,GRP-INFRA,Observability alerting and event correlation,High,Monitoring service for infrastructure and application components

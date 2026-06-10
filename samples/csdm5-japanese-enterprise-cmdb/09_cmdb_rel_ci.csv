@@ -1,0 +1,62 @@
+u_key,table,parent_u_key,child_u_key,type,notes
+REL-CAP-SALES-BA-SFDC,cmdb_rel_ci,CAP-SALES,BA-SFDC,Provided by::Provides,Sales capability is provided by CRM business application
+REL-CAP-SALES-BA-EC,cmdb_rel_ci,CAP-SALES,BA-EC,Provided by::Provides,Sales order capture capability is provided by B2B ordering portal
+REL-CAP-FIN-BA-SAP,cmdb_rel_ci,CAP-FIN,BA-SAP,Provided by::Provides,Finance capability is provided by core ERP
+REL-CAP-MFG-BA-MES,cmdb_rel_ci,CAP-MFG,BA-MES,Provided by::Provides,Manufacturing capability is provided by MES
+REL-CAP-SCM-BA-WMS,cmdb_rel_ci,CAP-SCM,BA-WMS,Provided by::Provides,Supply chain capability is provided by WMS
+REL-CAP-HR-BA-HR,cmdb_rel_ci,CAP-HR,BA-HR,Provided by::Provides,HR capability is provided by SmartHR and payroll hub
+REL-CAP-ITOPS-BA-PORTAL,cmdb_rel_ci,CAP-ITOPS,BA-PORTAL,Provided by::Provides,IT service operations capability is provided by employee portal
+REL-BA-SAP-SI-PRD,cmdb_rel_ci,BA-SAP,SI-SAP-PRD,Consumes::Consumed by,Required CSDM relation from business application to production service instance
+REL-BA-SAP-SI-DR,cmdb_rel_ci,BA-SAP,SI-SAP-DR,Consumes::Consumed by,ERP business application consumes DR service instance
+REL-BA-SAP-SI-DEV,cmdb_rel_ci,BA-SAP,SI-SAP-DEV,Consumes::Consumed by,ERP business application consumes development service instance
+REL-BA-SFDC-SI-PRD,cmdb_rel_ci,BA-SFDC,SI-SFDC-PRD,Consumes::Consumed by,CRM business application consumes Salesforce production service instance
+REL-BA-MES-SI-PRD,cmdb_rel_ci,BA-MES,SI-MES-PRD,Consumes::Consumed by,MES business application consumes production service instance
+REL-BA-MES-SI-TEST,cmdb_rel_ci,BA-MES,SI-MES-TEST,Consumes::Consumed by,MES business application consumes test service instance
+REL-BA-WMS-SI-PRD,cmdb_rel_ci,BA-WMS,SI-WMS-PRD,Consumes::Consumed by,WMS business application consumes production service instance
+REL-BA-HR-SI-PRD,cmdb_rel_ci,BA-HR,SI-HR-PRD,Consumes::Consumed by,HR business application consumes production service instance
+REL-BA-PORTAL-SI-PRD,cmdb_rel_ci,BA-PORTAL,SI-PORTAL-PRD,Consumes::Consumed by,Employee portal business application consumes production service instance
+REL-BA-EC-SI-PRD,cmdb_rel_ci,BA-EC,SI-EC-PRD,Consumes::Consumed by,B2B ordering business application consumes production service instance
+REL-BS-ORDER-BSO-STD,cmdb_rel_ci,BS-ORDER,BSO-ORDER-STD,Contains::Contained by,Business service contains standard offering
+REL-BS-ORDER-BSO-PREM,cmdb_rel_ci,BS-ORDER,BSO-ORDER-PREM,Contains::Contained by,Business service contains premium dealer offering
+REL-BS-MFG-BSO-247,cmdb_rel_ci,BS-MFG,BSO-MFG-247,Contains::Contained by,Business service contains plant 24x7 offering
+REL-BS-FIN-BSO-CLOSE,cmdb_rel_ci,BS-FIN,BSO-FIN-CLOSE,Contains::Contained by,Business service contains month-end closing offering
+REL-BS-HR-BSO-STD,cmdb_rel_ci,BS-HR,BSO-HR-STD,Contains::Contained by,Business service contains HR standard offering
+REL-BS-ITHELP-BSO-STD,cmdb_rel_ci,BS-ITHELP,BSO-ITHELP-STD,Contains::Contained by,Business service contains IT helpdesk offering
+REL-BSO-ORDER-STD-SI-SAP,cmdb_rel_ci,BSO-ORDER-STD,SI-SAP-PRD,Depends on::Used by,Order management offering depends on ERP production
+REL-BSO-ORDER-PREM-SI-EC,cmdb_rel_ci,BSO-ORDER-PREM,SI-EC-PRD,Depends on::Used by,Premium dealer ordering depends on B2B portal
+REL-BSO-ORDER-PREM-SI-SAP,cmdb_rel_ci,BSO-ORDER-PREM,SI-SAP-PRD,Depends on::Used by,Premium dealer ordering depends on ERP production
+REL-BSO-MFG-SI-MES,cmdb_rel_ci,BSO-MFG-247,SI-MES-PRD,Depends on::Used by,Plant production offering depends on MES production
+REL-BSO-FIN-SI-SAP,cmdb_rel_ci,BSO-FIN-CLOSE,SI-SAP-PRD,Depends on::Used by,Closing service offering depends on ERP production
+REL-BSO-HR-SI-HR,cmdb_rel_ci,BSO-HR-STD,SI-HR-PRD,Depends on::Used by,HR offering depends on payroll hub
+REL-BSO-ITHELP-SI-PORTAL,cmdb_rel_ci,BSO-ITHELP-STD,SI-PORTAL-PRD,Depends on::Used by,IT helpdesk offering depends on employee portal
+REL-TS-NET-TSO-JP,cmdb_rel_ci,TS-NET,TSO-NET-JP,Contains::Contained by,Technical service contains network operations offering
+REL-TS-ID-TSO-CORP,cmdb_rel_ci,TS-ID,TSO-ID-CORP,Contains::Contained by,Technical service contains identity offering
+REL-TS-DB-TSO-CRITICAL,cmdb_rel_ci,TS-DB,TSO-DB-CRITICAL,Contains::Contained by,Technical service contains critical database offering
+REL-TS-CLOUD-TSO-LZ,cmdb_rel_ci,TS-CLOUD,TSO-CLOUD-LZ,Contains::Contained by,Technical service contains cloud landing zone offering
+REL-TS-MON-TSO-247,cmdb_rel_ci,TS-MON,TSO-MON-247,Contains::Contained by,Technical service contains monitoring offering
+REL-TSO-DB-SI-SAP,cmdb_rel_ci,TSO-DB-CRITICAL,SI-SAP-PRD,Contains::Contained by,Critical database operations offering contains ERP service instance
+REL-TSO-DB-SI-MES,cmdb_rel_ci,TSO-DB-CRITICAL,SI-MES-PRD,Contains::Contained by,Critical database operations offering contains MES service instance
+REL-TSO-CLOUD-SI-WMS,cmdb_rel_ci,TSO-CLOUD-LZ,SI-WMS-PRD,Contains::Contained by,Cloud landing zone offering contains WMS service instance
+REL-TSO-CLOUD-SI-EC,cmdb_rel_ci,TSO-CLOUD-LZ,SI-EC-PRD,Contains::Contained by,Cloud landing zone offering contains B2B ordering service instance
+REL-TSO-ID-SI-PORTAL,cmdb_rel_ci,TSO-ID-CORP,SI-PORTAL-PRD,Contains::Contained by,Identity offering underpins employee portal
+REL-TSO-NET-DCG-NGY,cmdb_rel_ci,TSO-NET-JP,DCG-NGY-PLANT-NET,Contains::Contained by,Network offering contains Nagoya dynamic CI group
+REL-TSO-NET-DCG-ERP,cmdb_rel_ci,TSO-NET-JP,DCG-OSK-ERP-INFRA,Contains::Contained by,Network offering contains Osaka ERP infrastructure dynamic CI group
+REL-SI-EC-SI-SAP,cmdb_rel_ci,SI-EC-PRD,SI-SAP-PRD,Depends on::Used by,B2B ordering portal depends on ERP for order posting
+REL-SI-WMS-SI-SAP,cmdb_rel_ci,SI-WMS-PRD,SI-SAP-PRD,Depends on::Used by,WMS depends on ERP for inventory and shipment posting
+REL-SI-HR-SI-SAP,cmdb_rel_ci,SI-HR-PRD,SI-SAP-PRD,Sends data to::Receives data from,Payroll hub sends payroll journal data to ERP
+REL-SI-SAP-APP01,cmdb_rel_ci,SI-SAP-PRD,CI-SAP-APP01,Depends on::Used by,ERP production service instance depends on SAP app server 1
+REL-SI-SAP-APP02,cmdb_rel_ci,SI-SAP-PRD,CI-SAP-APP02,Depends on::Used by,ERP production service instance depends on SAP app server 2
+REL-SI-SAP-HANA,cmdb_rel_ci,SI-SAP-PRD,CI-SAP-HANA01,Depends on::Used by,ERP production service instance depends on HANA database
+REL-SI-MES-APP,cmdb_rel_ci,SI-MES-PRD,CI-MES-APP01,Depends on::Used by,MES production depends on application server
+REL-SI-MES-DB,cmdb_rel_ci,SI-MES-PRD,CI-MES-DB01,Depends on::Used by,MES production depends on Oracle database
+REL-SI-MES-PLC,cmdb_rel_ci,SI-MES-PRD,CI-MES-PLC-GW01,Depends on::Used by,MES production depends on PLC gateway
+REL-SI-WMS-ECS,cmdb_rel_ci,SI-WMS-PRD,CI-WMS-ECS-SVC,Depends on::Used by,WMS production depends on ECS service
+REL-SI-WMS-PG,cmdb_rel_ci,SI-WMS-PRD,CI-WMS-PG,Depends on::Used by,WMS production depends on PostgreSQL database
+REL-SI-EC-APP,cmdb_rel_ci,SI-EC-PRD,CI-EC-APP,Depends on::Used by,B2B ordering depends on Azure App Service
+REL-SI-EC-PG,cmdb_rel_ci,SI-EC-PRD,CI-EC-PG,Depends on::Used by,B2B ordering depends on PostgreSQL database
+REL-SI-HR-INT,cmdb_rel_ci,SI-HR-PRD,CI-HR-INT01,Depends on::Used by,HR payroll hub depends on integration server
+REL-SI-PORTAL-NOW,cmdb_rel_ci,SI-PORTAL-PRD,CI-PORTAL-NOW,Depends on::Used by,Employee portal depends on ServiceNow tenant
+REL-PORTAL-IDP,cmdb_rel_ci,CI-PORTAL-NOW,CI-IDP,Depends on::Used by,Employee portal tenant depends on corporate identity provider
+REL-DCG-NGY-SW,cmdb_rel_ci,DCG-NGY-PLANT-NET,CI-SW-NGY01,Contains::Contained by,Nagoya dynamic CI group contains plant core switch
+REL-DCG-ERP-APP01,cmdb_rel_ci,DCG-OSK-ERP-INFRA,CI-SAP-APP01,Contains::Contained by,ERP infrastructure dynamic CI group contains SAP app server 1
+REL-DCG-ERP-HANA,cmdb_rel_ci,DCG-OSK-ERP-INFRA,CI-SAP-HANA01,Contains::Contained by,ERP infrastructure dynamic CI group contains HANA database

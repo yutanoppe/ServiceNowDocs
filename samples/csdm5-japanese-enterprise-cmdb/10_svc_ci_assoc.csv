@@ -1,0 +1,17 @@
+u_key,table,service_instance_u_key,ci_u_key,association_type,source,notes
+SCA-SAP-APP01,svc_ci_assoc,SI-SAP-PRD,CI-SAP-APP01,Runs on,Service Mapping,SAP production includes primary app server
+SCA-SAP-APP02,svc_ci_assoc,SI-SAP-PRD,CI-SAP-APP02,Runs on,Service Mapping,SAP production includes secondary app server
+SCA-SAP-HANA,svc_ci_assoc,SI-SAP-PRD,CI-SAP-HANA01,Depends on,Service Mapping,SAP production includes HANA database
+SCA-SAP-DR-APP,svc_ci_assoc,SI-SAP-DR,CI-SAP-DR01,Runs on,Manual Mapping,SAP DR includes DR app server
+SCA-SAP-DR-HANA,svc_ci_assoc,SI-SAP-DR,CI-SAP-HANA-DR,Depends on,Manual Mapping,SAP DR includes DR HANA database
+SCA-MES-APP,svc_ci_assoc,SI-MES-PRD,CI-MES-APP01,Runs on,Service Mapping,MES production includes application server
+SCA-MES-DB,svc_ci_assoc,SI-MES-PRD,CI-MES-DB01,Depends on,Service Mapping,MES production includes Oracle database
+SCA-MES-PLC,svc_ci_assoc,SI-MES-PRD,CI-MES-PLC-GW01,Depends on,Service Mapping,MES production includes PLC gateway
+SCA-WMS-ECS,svc_ci_assoc,SI-WMS-PRD,CI-WMS-ECS-SVC,Runs on,Cloud Discovery,WMS production includes ECS service
+SCA-WMS-PG,svc_ci_assoc,SI-WMS-PRD,CI-WMS-PG,Depends on,Cloud Discovery,WMS production includes RDS PostgreSQL
+SCA-EC-APP,svc_ci_assoc,SI-EC-PRD,CI-EC-APP,Runs on,Cloud Discovery,B2B ordering includes Azure App Service
+SCA-EC-PG,svc_ci_assoc,SI-EC-PRD,CI-EC-PG,Depends on,Cloud Discovery,B2B ordering includes Azure PostgreSQL
+SCA-HR-INT,svc_ci_assoc,SI-HR-PRD,CI-HR-INT01,Runs on,Manual Mapping,Payroll hub includes integration server
+SCA-PORTAL-NOW,svc_ci_assoc,SI-PORTAL-PRD,CI-PORTAL-NOW,Runs on,Manual Mapping,Employee portal includes ServiceNow tenant CI
+SCA-SFDC-IDP,svc_ci_assoc,SI-SFDC-PRD,CI-IDP,Depends on,Manual Mapping,Salesforce tenant uses corporate identity provider
+SCA-PORTAL-IDP,svc_ci_assoc,SI-PORTAL-PRD,CI-IDP,Depends on,Manual Mapping,Employee portal uses corporate identity provider

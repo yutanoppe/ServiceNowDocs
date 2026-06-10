@@ -1,0 +1,8 @@
+u_key,table,name,name_ja,application_category,install_type,vendor,technology_stack,owner_department_u_key,it_owner_group_u_key,life_cycle_stage,life_cycle_status,criticality,notes
+BA-SAP,cmdb_ci_business_app,SAP S/4HANA Core ERP,SAP S/4HANA基幹ERP,ERP,On-premises,SAP,SAP S/4HANA ABAP HANA,DEPT-FIN,GRP-APP-ERP,Operational,In Use,Critical,Core finance procurement inventory and sales order processing
+BA-SFDC,cmdb_ci_business_app,Salesforce Sales Cloud,Salesforce営業支援,CRM,SaaS,Salesforce,Salesforce Platform,DEPT-SALES,GRP-APP-ERP,Operational,In Use,High,Domestic sales opportunity and account management
+BA-MES,cmdb_ci_business_app,Nagoya Manufacturing Execution System,名古屋MES,Manufacturing,On-premises,Custom,Java Oracle PLC Gateway,DEPT-MFG,GRP-APP-MFG,Operational,In Use,Critical,Shop-floor production instruction collection and traceability
+BA-WMS,cmdb_ci_business_app,Fukuoka Warehouse Management System,福岡WMS,Supply Chain,Cloud,Custom,AWS Java PostgreSQL,DEPT-SCM,GRP-APP-ERP,Operational,In Use,High,Warehouse picking packing and shipment control
+BA-HR,cmdb_ci_business_app,SmartHR and Payroll Hub,SmartHR・給与連携基盤,HR,SaaS plus integration,SmartHR and Custom,SmartHR iPaaS Python,DEPT-HR,GRP-APP-ERP,Operational,In Use,Medium,Employee master onboarding and payroll interfaces
+BA-PORTAL,cmdb_ci_business_app,Employee Service Portal,社員ポータル,Employee Experience,Cloud,ServiceNow,ServiceNow AI Platform,DEPT-IT,GRP-SD,Operational,In Use,High,Internal request knowledge and inquiry entry point
+BA-EC,cmdb_ci_business_app,B2B Ordering Portal,B2B受注ポータル,Digital Commerce,Cloud,Custom,Azure App Service Node.js PostgreSQL,DEPT-SALES,GRP-APP-ERP,Operational,In Use,High,Dealer and distributor self-service ordering

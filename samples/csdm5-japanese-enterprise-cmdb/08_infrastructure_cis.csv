@@ -1,0 +1,20 @@
+u_key,table,sys_class_name,name,name_ja,ci_type,environment,location_u_key,support_group_u_key,operational_status,life_cycle_stage,life_cycle_status,ip_address,platform,notes
+CI-SAP-APP01,cmdb_ci_server,cmdb_ci_linux_server,sap-prd-app01,SAP本番AP01,Application Server,Production,LOC-OSK-DC,GRP-INFRA,Operational,Operational,In Use,10.20.10.21,RHEL,SAP application server primary
+CI-SAP-APP02,cmdb_ci_server,cmdb_ci_linux_server,sap-prd-app02,SAP本番AP02,Application Server,Production,LOC-OSK-DC,GRP-INFRA,Operational,Operational,In Use,10.20.10.22,RHEL,SAP application server secondary
+CI-SAP-HANA01,cmdb_ci_db_instance,cmdb_ci_db_hana_instance,HANA_PRD,HANA本番DB,Database Instance,Production,LOC-OSK-DC,GRP-INFRA,Operational,Operational,In Use,10.20.20.11,SAP HANA,ERP HANA database
+CI-SAP-DR01,cmdb_ci_server,cmdb_ci_linux_server,sap-dr-app01,SAP災対AP01,Application Server,DR,LOC-OSK-DC,GRP-INFRA,Standby,Operational,In Use,10.21.10.21,RHEL,DR application server
+CI-SAP-HANA-DR,cmdb_ci_db_instance,cmdb_ci_db_hana_instance,HANA_DR,HANA災対DB,Database Instance,DR,LOC-OSK-DC,GRP-INFRA,Standby,Operational,In Use,10.21.20.11,SAP HANA,DR HANA replica
+CI-MES-APP01,cmdb_ci_server,cmdb_ci_windows_server,mes-prd-app01,MES本番AP01,Application Server,Production,LOC-NGY-PLANT,GRP-INFRA,Operational,Operational,In Use,10.30.10.31,Windows Server,MES application server
+CI-MES-DB01,cmdb_ci_db_instance,cmdb_ci_db_ora_instance,MESORA_PRD,MES本番Oracle,Database Instance,Production,LOC-NGY-PLANT,GRP-INFRA,Operational,Operational,In Use,10.30.20.31,Oracle,Manufacturing database
+CI-MES-PLC-GW01,cmdb_ci_appl,cmdb_ci_appl,mes-plc-gw01,MES PLCゲートウェイ,Application,Production,LOC-NGY-PLANT,GRP-APP-MFG,Operational,Operational,In Use,10.30.30.31,Java Gateway,PLC data collection gateway
+CI-WMS-ECS-SVC,cmdb_ci_appl,cmdb_ci_appl,wms-ecs-service,WMS ECSサービス,Application,Production,LOC-FUK-LC,GRP-INFRA,Operational,Operational,In Use,,AWS ECS,Warehouse management container service
+CI-WMS-PG,cmdb_ci_db_instance,cmdb_ci_postgresql_instance,wms-postgres-prd,WMS PostgreSQL本番,Database Instance,Production,LOC-FUK-LC,GRP-INFRA,Operational,Operational,In Use,,Amazon RDS PostgreSQL,WMS managed database
+CI-EC-APP,cmdb_ci_appl,cmdb_ci_appl,b2b-ordering-app,B2B受注アプリ,Application,Production,LOC-TYO-HQ,GRP-INFRA,Operational,Operational,In Use,,Azure App Service,Dealer ordering web application
+CI-EC-PG,cmdb_ci_db_instance,cmdb_ci_postgresql_instance,b2b-ordering-pg,B2B受注PostgreSQL,Database Instance,Production,LOC-TYO-HQ,GRP-INFRA,Operational,Operational,In Use,,Azure Database for PostgreSQL,Dealer ordering database
+CI-HR-INT01,cmdb_ci_server,cmdb_ci_linux_server,hr-int-prd01,HR連携本番01,Integration Server,Production,LOC-TYO-HQ,GRP-INFRA,Operational,Operational,In Use,10.10.40.41,Ubuntu,Payroll interface runtime
+CI-PORTAL-NOW,cmdb_ci_appl,cmdb_ci_appl,servicenow-prod-tenant,ServiceNow本番テナント,Application,Production,LOC-TYO-HQ,GRP-SD,Operational,Operational,In Use,,ServiceNow AI Platform,Employee service portal tenant
+CI-IDP,cmdb_ci_appl,cmdb_ci_appl,entra-id-prod,Entra ID本番,Application,Production,LOC-TYO-HQ,GRP-SEC,Operational,Operational,In Use,,Microsoft Entra ID,Corporate identity provider
+CI-FW-TYO01,cmdb_ci_netgear,cmdb_ci_ip_firewall,tokyo-fw01,東京FW01,Firewall,Production,LOC-TYO-HQ,GRP-INFRA,Operational,Operational,In Use,10.10.0.1,FortiGate,Tokyo perimeter firewall
+CI-SW-NGY01,cmdb_ci_netgear,cmdb_ci_ip_switch,nagoya-core-sw01,名古屋コアSW01,Switch,Production,LOC-NGY-PLANT,GRP-INFRA,Operational,Operational,In Use,10.30.0.2,Cisco,Plant core switch
+DCG-NGY-PLANT-NET,cmdb_ci_query_based_service,cmdb_ci_query_based_service,Nagoya Plant Network Dynamic CI Group,名古屋工場ネットワーク動的CIグループ,Dynamic CI Group,Production,LOC-NGY-PLANT,GRP-INFRA,Operational,Operational,In Use,,CMDB Group Query,Dynamic grouping of Nagoya network CIs for impact analysis
+DCG-OSK-ERP-INFRA,cmdb_ci_query_based_service,cmdb_ci_query_based_service,Osaka ERP Infrastructure Dynamic CI Group,大阪ERP基盤動的CIグループ,Dynamic CI Group,Production,LOC-OSK-DC,GRP-INFRA,Operational,Operational,In Use,,CMDB Group Query,Dynamic grouping of ERP servers and databases

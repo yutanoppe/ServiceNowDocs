@@ -1,0 +1,17 @@
+u_key,table,name,name_ja,type,parent_u_key,city,prefecture,country,owner_group_u_key,notes
+COMP-CJM,core_company,Contoso Japan Manufacturing Co. Ltd.,コンテック日本製造株式会社,Company,,Tokyo,Tokyo,Japan,,Sample Japanese manufacturing and distribution enterprise
+LOC-TYO-HQ,cmn_location,Tokyo Head Office,東京本社,Office,COMP-CJM,Chiyoda-ku,Tokyo,Japan,,Corporate headquarters and primary business users
+LOC-OSK-DC,cmn_location,Osaka Data Center,大阪データセンター,Data Center,COMP-CJM,Osaka,Osaka,Japan,,Co-location and DR equipment room
+LOC-NGY-PLANT,cmn_location,Nagoya Plant,名古屋工場,Plant,COMP-CJM,Nagoya,Aichi,Japan,,Manufacturing execution and shop-floor systems
+LOC-FUK-LC,cmn_location,Fukuoka Logistics Center,福岡物流センター,Logistics Center,COMP-CJM,Fukuoka,Fukuoka,Japan,,Warehouse and shipping operations
+DEPT-SALES,cmn_department,Sales Division,営業本部,Department,COMP-CJM,Tokyo,Tokyo,Japan,,Domestic sales and key account teams
+DEPT-MFG,cmn_department,Manufacturing Division,製造本部,Department,COMP-CJM,Nagoya,Aichi,Japan,,Factory operations and production engineering
+DEPT-SCM,cmn_department,Supply Chain Division,サプライチェーン本部,Department,COMP-CJM,Fukuoka,Fukuoka,Japan,,Procurement logistics and inventory planning
+DEPT-FIN,cmn_department,Finance and Accounting Division,経理財務本部,Department,COMP-CJM,Tokyo,Tokyo,Japan,,Accounting tax and treasury
+DEPT-HR,cmn_department,Human Resources Division,人事総務本部,Department,COMP-CJM,Tokyo,Tokyo,Japan,,HR payroll and general affairs
+DEPT-IT,cmn_department,Corporate IT Division,情報システム部,Department,COMP-CJM,Tokyo,Tokyo,Japan,,IT strategy operations and service desk
+GRP-APP-ERP,sys_user_group,ERP Application Team,ERPアプリチーム,Support Group,DEPT-IT,Tokyo,Tokyo,Japan,,SAP and surrounding ERP applications
+GRP-APP-MFG,sys_user_group,Manufacturing Systems Team,製造システムチーム,Support Group,DEPT-IT,Nagoya,Aichi,Japan,,MES and plant applications
+GRP-INFRA,sys_user_group,Infrastructure Operations Team,インフラ運用チーム,Support Group,DEPT-IT,Osaka,Osaka,Japan,,Network server database and cloud operations
+GRP-SEC,sys_user_group,Security Operations Team,セキュリティ運用チーム,Support Group,DEPT-IT,Tokyo,Tokyo,Japan,,Identity security monitoring and incident response
+GRP-SD,sys_user_group,IT Service Desk,ITサービスデスク,Support Group,DEPT-IT,Tokyo,Tokyo,Japan,,Employee contact point for IT requests and incidents

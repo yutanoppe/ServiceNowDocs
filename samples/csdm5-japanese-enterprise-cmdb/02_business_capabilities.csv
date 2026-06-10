@@ -1,0 +1,8 @@
+u_key,table,name,name_ja,parent_u_key,capability_level,owner_department_u_key,criticality,notes
+CAP-CUSTOMER,cmdb_ci_business_capability,Customer and Channel Management,顧客・チャネル管理,,1,DEPT-SALES,High,Manage customers sales channels and opportunities
+CAP-SALES,cmdb_ci_business_capability,Opportunity to Order,案件・受注管理,CAP-CUSTOMER,2,DEPT-SALES,High,Lead opportunity quotation and order capture
+CAP-MFG,cmdb_ci_business_capability,Plan to Produce,生産計画・製造実行,,1,DEPT-MFG,Critical,Production planning manufacturing execution and quality collection
+CAP-SCM,cmdb_ci_business_capability,Procure to Deliver,調達・物流管理,,1,DEPT-SCM,High,Procurement inventory warehousing and shipping
+CAP-FIN,cmdb_ci_business_capability,Record to Report,会計・決算管理,,1,DEPT-FIN,Critical,General ledger accounts payable receivable closing and statutory reporting
+CAP-HR,cmdb_ci_business_capability,Hire to Retire,採用・人事労務管理,,1,DEPT-HR,Medium,Employee master attendance payroll and HR operations
+CAP-ITOPS,cmdb_ci_business_capability,Operate IT Services,ITサービス運用,,1,DEPT-IT,Critical,IT service operations observability identity and infrastructure

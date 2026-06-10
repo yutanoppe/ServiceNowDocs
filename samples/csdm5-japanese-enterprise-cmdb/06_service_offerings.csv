@@ -1,0 +1,12 @@
+u_key,table,name,name_ja,parent_service_u_key,service_classification,availability_commitment,support_hours,support_group_u_key,approval_group_u_key,location_u_key,notes
+BSO-ORDER-STD,service_offering,Order Management Standard,受注管理標準,BS-ORDER,Business Service,99.5 percent monthly,Weekdays 08:00-20:00 JST,GRP-SD,GRP-APP-ERP,LOC-TYO-HQ,Standard support for internal sales users
+BSO-ORDER-PREM,service_offering,Dealer Ordering Premium,販売店受注プレミアム,BS-ORDER,Business Service,99.9 percent monthly,24x7 for P1 and P2,GRP-SD,GRP-APP-ERP,LOC-TYO-HQ,Extended support for external dealer ordering during campaign periods
+BSO-MFG-247,service_offering,Plant Production 24x7,工場生産24x7,BS-MFG,Business Service,99.9 percent monthly,24x7,GRP-APP-MFG,GRP-APP-MFG,LOC-NGY-PLANT,Manufacturing line critical support
+BSO-FIN-CLOSE,service_offering,Month-end Closing Priority,月次決算優先,BS-FIN,Business Service,99.7 percent monthly,Weekdays 08:00-22:00 JST month-end extended,GRP-APP-ERP,GRP-APP-ERP,LOC-TYO-HQ,Priority during monthly and year-end closing
+BSO-HR-STD,service_offering,Employee HR Standard,人事労務標準,BS-HR,Business Service,99.0 percent monthly,Weekdays 09:00-18:00 JST,GRP-SD,GRP-SD,LOC-TYO-HQ,Standard HR inquiry and employee master support
+BSO-ITHELP-STD,service_offering,IT Helpdesk Standard,ITヘルプデスク標準,BS-ITHELP,Business Service,99.0 percent monthly,Weekdays 08:00-19:00 JST,GRP-SD,GRP-SD,LOC-TYO-HQ,Employee self-service and service desk
+TSO-NET-JP,service_offering,Japan Office Network Operations,日本拠点ネットワーク運用,TS-NET,Technical Service,99.9 percent monthly,24x7 for network outages,GRP-INFRA,GRP-INFRA,LOC-OSK-DC,Network operations for Tokyo Osaka Nagoya and Fukuoka
+TSO-ID-CORP,service_offering,Corporate SSO and MFA Operations,社内SSO・MFA運用,TS-ID,Technical Service,99.9 percent monthly,24x7 for authentication outages,GRP-SEC,GRP-SEC,LOC-TYO-HQ,Identity platform operations
+TSO-DB-CRITICAL,service_offering,Critical Database Operations,重要DB運用,TS-DB,Technical Service,99.9 percent monthly,24x7,GRP-INFRA,GRP-INFRA,LOC-OSK-DC,HANA Oracle and PostgreSQL critical database operations
+TSO-CLOUD-LZ,service_offering,Cloud Landing Zone Operations,クラウドランディングゾーン運用,TS-CLOUD,Technical Service,99.5 percent monthly,Weekdays 08:00-20:00 JST,GRP-INFRA,GRP-INFRA,LOC-TYO-HQ,AWS and Azure shared cloud foundation operations
+TSO-MON-247,service_offering,Monitoring 24x7 Operations,24x7監視運用,TS-MON,Technical Service,99.9 percent monthly,24x7,GRP-INFRA,GRP-INFRA,LOC-OSK-DC,Event monitoring and escalation service

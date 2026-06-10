@@ -1,0 +1,6 @@
+u_key,table,name,name_ja,service_classification,owner_department_u_key,service_owner_group_u_key,consumer_type,criticality,notes
+BS-ORDER,cmdb_ci_service_business,Order Management Service,受注管理サービス,Business Service,DEPT-SALES,GRP-APP-ERP,Internal and dealer users,Critical,End-to-end quotation order and shipment status service
+BS-MFG,cmdb_ci_service_business,Manufacturing Execution Service,製造実行サービス,Business Service,DEPT-MFG,GRP-APP-MFG,Plant users,Critical,Production instruction results collection and traceability
+BS-FIN,cmdb_ci_service_business,Finance and Closing Service,会計・決算サービス,Business Service,DEPT-FIN,GRP-APP-ERP,Finance users,Critical,Accounting posting monthly closing and statutory reporting
+BS-HR,cmdb_ci_service_business,Employee Administration Service,人事労務サービス,Business Service,DEPT-HR,GRP-SD,Employees and HR users,Medium,Employee data onboarding attendance and payroll support
+BS-ITHELP,cmdb_ci_service_business,Employee IT Support Service,社員ITサポートサービス,Business Service,DEPT-IT,GRP-SD,All employees,High,IT requests incidents knowledge and self-service
