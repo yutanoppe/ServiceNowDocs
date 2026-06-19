@@ -1,4 +1,25 @@
+---
+title: "ServiceNowモダン開発環境 To-Be提案: 段階的移行ロードマップ"
+created: 2026-06-04
+updated: 2026-06-19
+type: proposal
+status: draft
+tags:
+  - servicenow
+  - modern-development-environment
+  - to-be-proposal
+  - obsidian
+aliases:
+  - "段階的移行ロードマップ"
+related:
+  - "[[05-github-operations]]"
+  - "[[07-raci-kpi-and-references]]"
+---
 # ServiceNowモダン開発環境 To-Be提案: 段階的移行ロードマップ
+
+> [!note] Obsidian navigation
+> [[to-be-proposal|提案インデックス]] / [[05-github-operations|前へ]] / [[07-raci-kpi-and-references|次へ]]
+
 
 - **作成日:** 2026-06-04
 - **参照ドキュメント:** 本リポジトリのAustraliaリリース、およびAutomatePro公式公開情報

@@ -1,3 +1,21 @@
+---
+title: "ServiceNow インストール済みプラグイン更新の運用ベストプラクティス"
+created: 2026-06-19
+updated: 2026-06-19
+type: knowledge
+status: draft
+tags:
+  - servicenow
+  - plugins
+  - governance
+  - release-management
+  - knowledge
+aliases:
+  - "プラグイン更新ガバナンス"
+related:
+  - "[[servicenow-skip-record-management]]"
+  - "[[servicenow-brazil-major-upgrade-plan]]"
+---
 # ServiceNow インストール済みプラグイン更新の運用ベストプラクティス
 
 ## 目的
@@ -456,3 +474,7 @@ ServiceNow のプラグイン更新は、Platform Admin だけで完結する作
 - 適用・保留のどちらでも判断理由と次アクションを記録する。
 
 この運用により、プラグイン更新を安全かつ継続的に実施し、ServiceNow 環境の安定性、保守性、セキュリティを維持できます。
+## Obsidianリンク
+
+- [[servicenow-skip-record-management]]
+- [[servicenow-brazil-major-upgrade-plan]]

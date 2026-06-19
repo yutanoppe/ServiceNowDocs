@@ -1,4 +1,24 @@
+---
+title: "ServiceNowモダン開発環境 To-Be提案: 概要・As-Is・設計原則"
+created: 2026-06-04
+updated: 2026-06-19
+type: proposal
+status: draft
+tags:
+  - servicenow
+  - modern-development-environment
+  - to-be-proposal
+  - obsidian
+aliases:
+  - "概要・As-Is・設計原則"
+related:
+  - "[[02-target-architecture]]"
+---
 # ServiceNowモダン開発環境 To-Be提案: 概要・As-Is・設計原則
+
+> [!note] Obsidian navigation
+> [[to-be-proposal|提案インデックス]] / [[02-target-architecture|次へ]]
+
 
 - **作成日:** 2026-06-04
 - **参照ドキュメント:** 本リポジトリのAustraliaリリース、およびAutomatePro公式公開情報

@@ -1,4 +1,25 @@
+---
+title: "ServiceNowモダン開発環境 To-Be提案: GitHub運用標準"
+created: 2026-06-04
+updated: 2026-06-19
+type: proposal
+status: draft
+tags:
+  - servicenow
+  - modern-development-environment
+  - to-be-proposal
+  - obsidian
+aliases:
+  - "GitHub運用標準"
+related:
+  - "[[04-quality-gates-and-testing]]"
+  - "[[06-migration-roadmap]]"
+---
 # ServiceNowモダン開発環境 To-Be提案: GitHub運用標準
+
+> [!note] Obsidian navigation
+> [[to-be-proposal|提案インデックス]] / [[04-quality-gates-and-testing|前へ]] / [[06-migration-roadmap|次へ]]
+
 
 - **作成日:** 2026-06-04
 - **参照ドキュメント:** 本リポジトリのAustraliaリリース、およびAutomatePro公式公開情報

@@ -1,4 +1,25 @@
+---
+title: "ServiceNowモダン開発環境 To-Be提案: 品質ゲート・自動テスト"
+created: 2026-06-04
+updated: 2026-06-19
+type: proposal
+status: draft
+tags:
+  - servicenow
+  - modern-development-environment
+  - to-be-proposal
+  - obsidian
+aliases:
+  - "品質ゲート・自動テスト"
+related:
+  - "[[03-material-flows]]"
+  - "[[05-github-operations]]"
+---
 # ServiceNowモダン開発環境 To-Be提案: 品質ゲート・自動テスト
+
+> [!note] Obsidian navigation
+> [[to-be-proposal|提案インデックス]] / [[03-material-flows|前へ]] / [[05-github-operations|次へ]]
+
 
 - **作成日:** 2026-06-04
 - **参照ドキュメント:** 本リポジトリのAustraliaリリース、およびAutomatePro公式公開情報
