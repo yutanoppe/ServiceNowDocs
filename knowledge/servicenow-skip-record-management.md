@@ -1,3 +1,21 @@
+---
+title: "ServiceNow メジャーバージョンアップ時の Skip レコード管理方法"
+created: 2026-06-19
+updated: 2026-06-19
+type: knowledge
+status: draft
+tags:
+  - servicenow
+  - upgrade
+  - skip-records
+  - governance
+  - knowledge
+aliases:
+  - "Skip レコード管理"
+related:
+  - "[[servicenow-brazil-major-upgrade-plan]]"
+  - "[[servicenow-plugin-update-governance]]"
+---
 # ServiceNow メジャーバージョンアップ時の Skip レコード管理方法
 
 ## 目的
@@ -467,3 +485,7 @@ Skip レコード対応の基本は、以下の流れです。
 8. 繰り返し発生するものは Skipped Record Rules で自動化を検討する。
 
 最も重要なのは、Skip レコードを単に処理済みにすることではなく、**なぜ Retain / Merge / Revert / Reviewed と判断したかを、次回アップグレード時にも説明できる状態にすること**です。
+## Obsidianリンク
+
+- [[servicenow-brazil-major-upgrade-plan]]
+- [[servicenow-plugin-update-governance]]

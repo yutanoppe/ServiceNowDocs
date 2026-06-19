@@ -1,3 +1,21 @@
+---
+title: "ServiceNow Brazil メジャーバージョンアップ計画ベストプラクティス"
+created: 2026-06-19
+updated: 2026-06-19
+type: knowledge
+status: draft
+tags:
+  - servicenow
+  - upgrade
+  - brazil
+  - release-management
+  - knowledge
+aliases:
+  - "Brazil アップグレード計画"
+related:
+  - "[[servicenow-skip-record-management]]"
+  - "[[servicenow-plugin-update-governance]]"
+---
 # ServiceNow Brazil メジャーバージョンアップ計画ベストプラクティス
 
 ## 目的
@@ -369,3 +387,7 @@ Brazil アップグレードの成功は、単にアップグレードが完了�
 - ServiceNow product documentation: Pre- and post-upgrade tasks for products in use
 - ServiceNow product documentation: Release notes and fixed problems for the target family release
 - Repository knowledge: `knowledge/servicenow-skip-record-management.md`
+## Obsidianリンク
+
+- [[servicenow-skip-record-management]]
+- [[servicenow-plugin-update-governance]]

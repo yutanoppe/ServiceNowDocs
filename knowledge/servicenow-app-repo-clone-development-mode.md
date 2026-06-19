@@ -1,3 +1,21 @@
+---
+title: "ServiceNow: Application Repositoryアプリがクローン後に開発者モードになる場合の整理"
+created: 2026-06-19
+updated: 2026-06-19
+type: knowledge
+status: draft
+tags:
+  - servicenow
+  - application-repository
+  - clone
+  - development-mode
+  - knowledge
+aliases:
+  - "Application Repositoryアプリのクローン後開発者モード化"
+related:
+  - "[[servicenow-plugin-update-governance]]"
+  - "[[servicenow-skip-record-management]]"
+---
 # ServiceNow: Application Repositoryアプリがクローン後に開発者モードになる場合の整理
 
 ## 事象
@@ -52,3 +70,7 @@ ServiceNowの推奨に従い、クローン前にPoC環境の開発版を保全�
 - `markdown/application-development/application-repository-self-hosted/convert-installed-applications-to-development-mode.md`
 - `markdown/application-development/application-repository-self-hosted/convert-custom-app-to-update-app-repo.md`
 - `markdown/application-development/application-repository-self-hosted/manage-apps.md`
+## Obsidianリンク
+
+- [[servicenow-plugin-update-governance]]
+- [[servicenow-skip-record-management]]

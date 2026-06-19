@@ -1,4 +1,25 @@
+---
+title: "ServiceNowモダン開発環境 To-Be提案: To-Be全体像"
+created: 2026-06-04
+updated: 2026-06-19
+type: proposal
+status: draft
+tags:
+  - servicenow
+  - modern-development-environment
+  - to-be-proposal
+  - obsidian
+aliases:
+  - "To-Be全体像"
+related:
+  - "[[01-executive-summary]]"
+  - "[[03-material-flows]]"
+---
 # ServiceNowモダン開発環境 To-Be提案: To-Be全体像
+
+> [!note] Obsidian navigation
+> [[to-be-proposal|提案インデックス]] / [[01-executive-summary|前へ]] / [[03-material-flows|次へ]]
+
 
 - **作成日:** 2026-06-04
 - **参照ドキュメント:** 本リポジトリのAustraliaリリース、およびAutomatePro公式公開情報
