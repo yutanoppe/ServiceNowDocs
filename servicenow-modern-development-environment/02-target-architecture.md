@@ -1,7 +1,7 @@
 ---
 title: "ServiceNowモダン開発環境 To-Be提案: To-Be全体像"
 created: 2026-06-04
-updated: 2026-06-22
+updated: 2026-06-23
 type: proposal
 status: draft
 tags:
@@ -93,3 +93,38 @@ ReleaseOpsでは本番をコントローラーとし、すべての非本番をM
 - 本番手順の所要時間、監視、切戻し、Runbook taskのリハーサルが必要な変更
 
 Pre-Prodを使う場合でも、Pre-Prodで新たに開発・修正して別成果物を作らない。検証で承認されたGitタグ、Application Repositoryバージョン、更新セット、Deployment Requestをそのまま適用し、差分が出た場合は開発環境へ戻して再作成・再検証する。
+
+### 4.4 To-Be構成でのクローニング方式ベストプラクティス
+
+To-Be構成では、GitHub、Application Repository、ReleaseOps Deployment Requestがリリース成果物の正本になる。したがって、クローニングは「開発成果物を配布する手段」ではなく、**非本番環境を本番相当データ・設定へ戻し、検証の信頼性を回復する保守作業**として扱う。
+
+#### 4.4.1 基本方針
+
+| 観点 | 推奨方針 |
+|---|---|
+| Clone方向 | 原則は本番→非本番。非本番→本番、検証→本番、開発→本番のCloneは禁止する。 |
+| Clone対象 | Dev、検証、任意Pre-Prodを用途別にCloneする。Developer Sandboxは短命環境として、必要に応じて再作成を優先する。 |
+| 正本 | アプリ資材の正本はGitHubとApplication Repository、リリース証跡の正本はReleaseOpsとする。Clone後に環境差分を手修正して正本化しない。 |
+| 頻度 | 検証はリリースサイクル前または月次、Devは四半期または大規模データモデル変更後、Pre-Prodは大型リハーサル・アップグレード前に限定する。 |
+| 予約 | リリース列車、UAT、AutomatePro回帰、外部結合試験の期間を避け、Clone freeze期間を事前告知する。 |
+
+#### 4.4.2 Clone前チェック
+
+1. **作業中資材の退避:** 未完了更新セット、未Publishアプリ、未マージPR、ローカルATF修正、テストデータを棚卸しし、必要なものはGitHub、Application Repository、更新セットExport、またはチケット添付へ退避する。
+2. **Clone除外・保持設定の確認:** Git資格情報、MID Server設定、OAuth/SAML/SSO、外部連携エンドポイント、メール送信設定、Credential/Connection Alias、環境固有System Property、AutomatePro実行アカウント、監視WebhookなどをClone profileで除外またはPost-cloneで再設定する。
+3. **AEMC/ReleaseOpsの安全化:** 本番をAEMC/ReleaseOpsコントローラーにするため、本番由来のコントローラー設定・Deployment Request履歴・承認状態が非本番で誤作動しないよう、対象テーブルの除外、無効化、またはPost-cloneリセット手順を定義する。
+4. **個人情報・機密情報対策:** 非本番利用に不要な個人情報、メールアドレス、トークン、連携先URLはマスキング、置換、無効化する。国外チームが使う環境ではデータ持ち出し条件も確認する。
+
+#### 4.4.3 Clone後チェック
+
+- Outbound email、通知、スケジュールジョブ、外部連携、Webhook、MID Server、IntegrationHub接続を非本番用に無効化または切替する。
+- GitHub接続、Application Repository接続、AEMC Managed Instance登録、ReleaseOps対象環境設定を非本番として再確認する。
+- ATF、AutomateProスモーク、Instance Scan、主要ログイン方式、代表業務フローを実行し、Clone後の利用開始条件を満たすことを確認する。
+- Clone後に必要な環境固有データパッチやテストユーザー作成は、手作業ではなくRunbook taskまたは冪等スクリプトで実施し、実行結果を記録する。
+
+#### 4.4.4 運用上の禁止事項
+
+- Cloneで消えることを前提に、非本番だけへ恒久設定や未管理データを作り込まない。
+- Clone直後の非本番で直接修正した内容を、GitHub・更新セット・Application Repositoryを経由せず本番候補にしない。
+- 本番由来の通知・連携・承認・スケジュールジョブを有効なまま非本番で稼働させない。
+- Cloneをリリース失敗時のロールバック手段として扱わない。本番ロールバックはDeployment Requestの復旧手順で管理する。

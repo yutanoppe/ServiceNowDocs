@@ -1,7 +1,7 @@
 ---
 title: "ServiceNow Modern Development Environment To-Be Proposal"
 created: 2026-06-04
-updated: 2026-06-22
+updated: 2026-06-23
 type: proposal
 status: draft
 tags:
@@ -33,8 +33,8 @@ related:
 | ファイル | 内容 |
 |---|---|
 | [[01-executive-summary|01-executive-summary.md]] | エグゼクティブサマリー、As-Is評価、設計原則 |
-| [[02-target-architecture|02-target-architecture.md]] | To-Be全体像、製品・ツール責務、インスタンス役割 |
-| [[03-material-flows|03-material-flows.md]] | スコープアプリ、ITSM/ITOM・グローバル変更、XML資材の標準フロー |
+| [[02-target-architecture|02-target-architecture.md]] | To-Be全体像、製品・ツール責務、インスタンス役割、Pre-Prod任意化、クローニング方式 |
+| [[03-material-flows|03-material-flows.md]] | スコープアプリ、ITSM/ITOM・グローバル変更、XML資材、先行リリース、データパッチ方式の標準フロー |
 | [[04-quality-gates-and-testing|04-quality-gates-and-testing.md]] | Deployment Requestメタデータ、品質ゲート、ATFとAutomateProの組み合わせ、追加製品・機能 |
 | [[05-github-operations|05-github-operations.md]] | GitHub連携の意義、PRレビュー方針、リポジトリ・ブランチ運用、国外チーム対応 |
 | [[06-migration-roadmap|06-migration-roadmap.md]] | Phase 0〜4の移行ロードマップ。AutomatePro連携のPoC・導入フェーズを含む |
@@ -44,7 +44,7 @@ related:
 ## 読み方
 
 1. 方針と論点を短時間で確認する場合は、[[01-executive-summary|01-executive-summary.md]] から読む。
-2. AEMC、ReleaseOps、GitHub、Application Repositoryの役割分担を確認する場合は、[[02-target-architecture|02-target-architecture.md]] を読む。
-3. XML資材、マスター系データ、Runbook taskの扱いを確認する場合は、[[03-material-flows|03-material-flows.md]] を読む。
+2. AEMC、ReleaseOps、GitHub、Application Repositoryの役割分担、またはTo-Be構成でのクローニング方式を確認する場合は、[[02-target-architecture|02-target-architecture.md]] を読む。
+3. XML資材、マスター系データ、Runbook task、リリース時データパッチの扱いを確認する場合は、[[03-material-flows|03-material-flows.md]] を読む。
 4. ATFとAutomateProを組み合わせた自動テスト計画を確認する場合は、[[04-quality-gates-and-testing|04-quality-gates-and-testing.md]] と [[06-migration-roadmap|06-migration-roadmap.md]] を読む。
 5. 顧客説明やレビュー会では、[[visual-overview.html]] をブラウザで開く。
