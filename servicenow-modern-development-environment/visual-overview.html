@@ -153,7 +153,7 @@
         <div class="step github"><strong>GitHub</strong>Issue、PR、Commit、Tagで変更理由とレビューを固定。</div>
         <div class="step"><strong>Dev / Sandbox</strong>開発者テスト、ATF、AutomateProスモーク、Instance Scan。</div>
         <div class="step releaseops"><strong>ReleaseOps</strong>Deployment Analyzer、承認、Runbook、ATF/AutomatePro証跡。</div>
-        <div class="step test"><strong>Test → Pre-Prod → Prod</strong>同一成果物を検証・リハーサル・本番へ昇格。</div>
+        <div class="step test"><strong>Test → Prod</strong>同一成果物を検証・本番へ昇格。Pre-Prodは任意リハーサル。</div>
       </div>
     </section>
 
@@ -164,7 +164,7 @@
         <tbody>
           <tr><td>ServiceNow内で完結する基本回帰</td><td><span class="pill">ATF</span></td><td>AEMC/ReleaseOpsに組み込みやすい標準ゲートとして実行。</td></tr>
           <tr><td>業務E2E、外部連携、実ユーザー視点</td><td><span class="pill">AutomatePro AutoTest</span></td><td>Visual playbackや実行証跡を活用し、UAT・回帰の信頼性を高める。</td></tr>
-          <tr><td>アップグレード・Pre-Prod全回帰</td><td><span class="pill">ATF + AutomatePro</span></td><td>内部品質と業務シナリオの両方を確認。</td></tr>
+          <tr><td>アップグレード・任意Pre-Prod全回帰</td><td><span class="pill">ATF + AutomatePro</span></td><td>内部品質と業務シナリオの両方を確認。</td></tr>
           <tr><td>リリース判定</td><td><span class="pill">ReleaseOps</span></td><td>Deployment Requestにテスト実行ID、結果URL、証跡を集約。</td></tr>
         </tbody>
       </table>

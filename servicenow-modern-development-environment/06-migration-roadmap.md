@@ -1,7 +1,7 @@
 ---
 title: "ServiceNowモダン開発環境 To-Be提案: 段階的移行ロードマップ"
 created: 2026-06-04
-updated: 2026-06-19
+updated: 2026-06-22
 type: proposal
 status: draft
 tags:
@@ -47,7 +47,7 @@ related:
 
 - AEMCで受付・所有者・開発者・Deployment Requestを管理する。
 - 1アプリ1GitHubリポジトリ、PR必須、タグとアプリバージョンの対応を導入する。
-- Application Repositoryの同一バージョンをReleaseOpsで検証→Pre-Prodまで昇格する。
+- Application Repositoryの同一バージョンをReleaseOpsで検証→本番まで昇格する。Pre-Prodは標準ステージにせず、必要な高リスク変更だけ任意リハーサルとして実施する。
 - ATF、AutomateProスモークテスト、Instance Scan、Runbook taskをパイプラインに組み込む。
 - 本番リリースは現行承認も並行させ、結果を比較する。
 - AutomateProはまずRunbook taskで起動・結果確認・証跡添付を標準化し、自動API連携が可能か評価する。
@@ -81,4 +81,4 @@ related:
 - ATFカバレッジ、AutomatePro E2Eカバレッジ、品質ゲートをアプリのリスク別に引き上げる。
 - XML例外を四半期ごとに見直し、Import Set化、同期化、アプリ／更新セット化できるものから削減する。
 - 緊急変更、失敗変更、ロールバックを振り返り、Playbookとテストへ反映する。
-- アップグレード時はPre-Prodで同じReleaseOps Playbook、回帰ATF、AutomatePro全回帰を使い、アプリ互換性と業務シナリオを確認する。
+- アップグレード時など高リスク変更では、標準パイプライン外のPre-Prodで同じReleaseOps Playbook、回帰ATF、AutomatePro全回帰を使い、アプリ互換性と業務シナリオを確認する。

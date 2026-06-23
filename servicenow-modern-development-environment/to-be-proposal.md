@@ -1,7 +1,7 @@
 ---
 title: "ServiceNow Modern Development Environment To-Be Proposal"
 created: 2026-06-04
-updated: 2026-06-19
+updated: 2026-06-22
 type: proposal
 status: draft
 tags:

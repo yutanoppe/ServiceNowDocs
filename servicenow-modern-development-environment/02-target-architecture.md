@@ -1,7 +1,7 @@
 ---
 title: "ServiceNowモダン開発環境 To-Be提案: To-Be全体像"
 created: 2026-06-04
-updated: 2026-06-19
+updated: 2026-06-22
 type: proposal
 status: draft
 tags:
@@ -43,7 +43,8 @@ Dev1～Dev5 または Developer Sandbox
 ReleaseOps Deployment Request（本番コントローラーで統制）
   |  Deployment Analyzer / ATF / AutomatePro / Instance Scan / 承認 / Runbook
   v
-検証（結合・回帰・UAT） -> Pre-Prod（本番同等リハーサル） -> 本番
+検証（結合・回帰・UAT） -> 本番
+  ※Pre-Prodは標準パイプライン外の任意リハーサル環境
                     |
                     v
 DevOps Change Velocity / Change Management（段階導入）
@@ -76,6 +77,19 @@ DevOps Change Velocity / Change Management（段階導入）
 | Dev3～Dev5 | 顧客別アプリの基準開発環境。顧客／アプリ単位のスコープ・GitHubリポジトリ・所有者を明確化する。 |
 | Dev6 | Phase 0～2のPoC・ReleaseOpsパイプライン検証環境。方式確立後は破壊的検証、アップグレード事前調査、教育用途へ戻す。 |
 | 検証 | 自動回帰、外部結合、UAT。ReleaseOpsのTest環境として、入場条件を満たした変更だけを受け入れる。 |
-| Pre-Prod | 本番同等構成でのリリースリハーサル、性能・運用確認、アップグレード検証。原則として本番と同じPlaybook・同じ成果物を使う。 |
+| Pre-Prod | **標準リリースパイプラインには置かない任意リハーサル環境**。大型リリース、基盤変更、アップグレード、性能・運用確認など、本番同等確認が必要な場合だけ、検証済みの同一成果物・同一Playbookで実施する。通常変更の必須ゲートにはしない。 |
 
 ReleaseOpsでは本番をコントローラーとし、すべての非本番をManaged Instanceにする。Dev6上で先にパイロットしても、正式運用時の制御・承認記録は本番コントローラーへ移す。
+
+### 4.3 Pre-Prodを標準パイプライン外に置く方針
+
+通常の昇格経路は **Dev／Developer Sandbox → 検証 → 本番** とし、Pre-ProdはReleaseOpsの標準ステージに組み込まない。理由は、すべての変更にPre-Prodを必須化するとリードタイムが伸び、環境待ちがボトルネック化し、軽微なアプリ変更でも本番同等環境の調整コストが発生するためである。
+
+ただし、Pre-Prodを廃止するのではなく、次の条件に該当する場合の**任意リハーサル／リスク低減環境**として残す。
+
+- 複数アプリ・複数更新セット・データ移行を伴う大型リリース
+- 本番停止、性能劣化、外部連携先切替、権限変更などの運用影響が大きい変更
+- ファミリーアップグレード、プラグイン導入、Store app更新、基盤設定変更
+- 本番手順の所要時間、監視、切戻し、Runbook taskのリハーサルが必要な変更
+
+Pre-Prodを使う場合でも、Pre-Prodで新たに開発・修正して別成果物を作らない。検証で承認されたGitタグ、Application Repositoryバージョン、更新セット、Deployment Requestをそのまま適用し、差分が出た場合は開発環境へ戻して再作成・再検証する。
